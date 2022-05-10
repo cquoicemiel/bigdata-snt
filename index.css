@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'BentonBlack';
+    src: url('assets/BentonSansBold.otf')
+}
+@font-face {
+    font-family: 'BentonMedium';
+    src: url('assets/BentonSansMedium.ttf')
+}
+@font-face {
+    font-family: 'BentonLight';
+    src: url('assets/BentonSansBook.otf')
+}
+@font-face {
+    font-family: 'InterBold';
+    src: url('assets/Inter-Bold.ttf')
+}
+@font-face {
+    font-family: 'InterMedium';
+    src: url('assets/Inter-Medium.ttf')
+}
+@font-face {
+    font-family: 'InterRegular';
+    src: url('assets/Inter-Regular.otf')
+}
+
+
+body{
+    background-color: white;
+    font-family: InterBold, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+.title{
+    font-size: 80px;
+    margin: 55px 0 110px 0;
+    font-family: InterBold, sans-serif;
+    background: linear-gradient(96deg, #000139, #640074);
+    background-size: 200% 200%;
+    align-self: center;
+
+    -webkit-animation: animation 7s ease infinite;
+    animation: animation 7s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-container .text-title{
+    font-family: InterMedium, sans-serif;
+    font-size: 35px;
+    margin-bottom: 35px;
+    background: linear-gradient(67deg, #691375, #b302b3);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: animation 8s ease infinite;
+    animation: animation 8s ease-in-out infinite;
+}
+
+.important-word{
+    font-family: InterMedium, sans-serif;
+
+    background: #4776e6;
+    background: -webkit-linear-gradient(293deg, #4776e6 0%, #8e54e9 100%);
+    background: linear-gradient(293deg, #4776e6 0%, #8e54e9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: wordAnimation 0s ease infinite;
+    animation: wordAnimation 0s ease infinite;
+ }
+
+.text-container .text{
+    font-family: InterRegular, sans-serif;
+    max-width: 800px;
+    font-size: 30px;
+    margin-bottom: 70px;
+    text-justify: inter-word;
+}
+
+
+@-webkit-keyframes animation {
+    0%{background-position:0% 43%}
+    50%{background-position:100% 58%}
+    100%{background-position:0% 43%}
+}
+@keyframes animation {
+    0%{background-position:0% 43%}
+    50%{background-position:100% 58%}
+    100%{background-position:0% 43%}
+}
+
+@-webkit-keyframes titleAnimation {
+    0%{background-position:0% 64%}
+    50%{background-position:100% 37%}
+    100%{background-position:0% 64%}
+}
+@keyframes titleAnimation {
+    0%{background-position:0% 64%}
+    50%{background-position:100% 37%}
+    100%{background-position:0% 64%}
+}
+
+
+
+@-webkit-keyframes backgroundAnimation {
+    0%{background-position:0% 43%}
+    50%{background-position:100% 58%}
+    100%{background-position:0% 43%}
+}
+@keyframes backgroundAnimation {
+    0%{background-position:0% 43%}
+    50%{background-position:100% 58%}
+    100%{background-position:0% 43%}
+}
