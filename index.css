@@ -23,6 +23,9 @@
     src: url('assets/Inter-Regular.otf')
 }
 
+html{
+    max-width: 1920px;
+}
 
 body{
     background-color: white;
