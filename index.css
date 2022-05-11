@@ -33,6 +33,79 @@ body{
     color: black;
 }
 
+.source-container{
+    margin: 120px 0;
+
+}
+
+.source-container .source-title{
+    font-family: InterBold, sans-serif;
+    font-size: 35px;
+    background: linear-gradient(96deg, #000139, #640074);
+    background-size: 200% 200%;
+    align-self: center;
+
+    -webkit-animation: animation 7s ease infinite;
+    animation: animation 7s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.question-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question{
+    background-size: 200% 200%;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    background: #4776e6;
+    background: -webkit-linear-gradient(293deg, #4776e6 0%, #8e54e9 100%);
+    background: linear-gradient(293deg, #4776e6 0%, #8e54e9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.question-title{
+    font-family: InterBold, sans-serif;
+    font-size: 35px;
+    background: linear-gradient(96deg, #000139, #640074);
+    background-size: 200% 200%;
+    align-self: center;
+
+    -webkit-animation: animation 7s ease infinite;
+    animation: animation 7s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.source-list{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+.source-list li{
+    margin: 20px 0;
+    font-size: 25px;
+}
+
+.source-link{
+    text-decoration: none;
+    font-family: InterRegular, sans-serif;
+    color: black;
+    cursor: pointer;
+}
+
+.source-name{
+    background: #4776e6;
+    background: -webkit-linear-gradient(293deg, #4776e6 0%, #8e54e9 100%);
+    background: linear-gradient(293deg, #4776e6 0%, #8e54e9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .title{
     font-size: 80px;
     margin: 55px 0 110px 0;
@@ -51,6 +124,8 @@ body{
 .text-container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .text-container .text-title{
