@@ -29,16 +29,34 @@
         Ces ensembles de données sont si volumineux qu’un logiciel de traitement de données traditionnel ne peut tout simplement pas les gérer. Mais ces énormes volumes de données peuvent être utilisés pour résoudre des problèmes que vous n’auriez jamais pu résoudre auparavant. <br/>
         <br/>Le Big Data peut être représenté en trois V : <br/><br/>
         <span class="important-word">- Volume</span> : Le volume car la quantitée de données à son important. Avec le Big Data, vous devrez traiter de gros volumes de données. Cela peut être des flux de données Twitter, des flx de clics sur une page web ou une application mobile<br/>Pour certaines entreprises, cela peut correspondre à des dizaines de téraoctets de données. Pour d’autres, il peut s’agir de centaines de pétaoctets.<br/><br/><span class="important-word">- Vitesse</span> : Certains produits intelligents accessibles via Internet opèrent en temps réel ou quasi réel et nécessitent une évaluation et une action en temps réel.<br/><br/><span class="important-word">- Variété</span> : La variété fait allusion aux nombreux types de données disponibles.</span>
-            <img class="image-icon" src="assets/imageicon.png"/>
+            <div class="image-container"><img id="image1" class="image-icon" src="assets/imageicon.png"/></div>
+            <div id="modal1" class="modal">
+                <img class="modal-content" id="modalImg1">
+            </div>
         </div>
-
+<div class="text-container">
         <span class="text-title">Où ces données sont elles utilisées ?</span>
         <span class="text">Le Big Data est utilisé dans plusieurs domaines, il est implémenté dans plusieurs domaines : <br/><br/><span class="important-word">- Les Entreprises</span> : Dans le domaine de l'entreprise le Big Data est surtout utilisé à but prédictif : Par exemple Amazon sont capables grâce à des technologies très avancées d’analyses des données massives dont ils disposent sont capables de prédire le prochain act d'achat de ses clients et donc de préparer l'expédition des marchandises en amont de la commande. Les GAFAM détiennent actuellement près de 80% des données personnelles au niveau mondial. <br/> <br/><span class="important-word">- Les Gouvernements</span> : Enquêtes criminelles, défense, élections, … le Big Data est, depuis sa naissance, utilisé par les pouvoirs publics.
-
-Ce dernier collecte et analyse toutes les données sur la criminalité de la ville et permet ainsi de prévoir où et quand les crimes seraient susceptibles d’être commis au sein de cette ville. <br/><br/><span class="important-word">- Le Finance, les Banques et les Assurances</span> : Dans le domaine des finances de la banque et de l'assurance le Big Data à une importante place, car il est estimé que le gain tiré de l’utilisation du Big Data par les banques et les institutions financières représenterait 10 % de revenus annuels supplémentaires.</span>
+            Ce dernier collecte et analyse toutes les données sur la criminalité de la ville et permet ainsi de prévoir où et quand les crimes seraient susceptibles d’être commis au sein de cette ville. <br/><br/><span class="important-word">- Le Finance, les Banques et les Assurances</span> : Dans le domaine des finances de la banque et de l'assurance le Big Data à une importante place, car il est estimé que le gain tiré de l’utilisation du Big Data par les banques et les institutions financières représenterait 10 % de revenus annuels supplémentaires.</span>
+    <div class="image-container"><img id="image2" class="image-icon" src="assets/imageicon.png"/></div>
+    <div id="modal2" class="modal">
+        <img class="modal-content" id="modalImg2">
+    </div>
+    </div>
+    <div class="text-container">
         <span class="text-title">Quel impacts cela a-t-il sur l'environnement</span>
-        <span class="text">Le transit et le traitement des données nécessitent une importante capacité de stockage et de calcul donc les données passent par des data centers et y restent parfois, les data centers sont des lieus, souvent immenses, où se trouvent de nombreux ordinateurs.</span>
-
+        <span class="text">Le transit et le traitement des données nécessitent une importante capacité de stockage et de calcul.
+Les données transitent sur internet passent enfaite par des data centers et y restent parfois,
+les data centers sont de gigantesque locaux, où sont entreposé de nombreux superordinateur. l'entretien de ces ordinateurs
+speciaux, est très vorace en energie, notamment pour le refroidissement néanmoins la plupart des Datacenters
+ne nécessitent qu'une ou deux visites de maintenance préventive par an.
+Cependant, un nombre plus élevé peut être nécessaire si l'infrastructure se trouve dans un environnement hostile.</span>
+    <div class="image-container"><img id="image3" class="image-icon" src="assets/imageicon.png"/></div>
+    <div id="modal3" class="modal">
+        <img class="modal-content" id="modalImg3">
+    </div>
+    </div>
+</div>
 
 
         <div class="question-container">
@@ -61,6 +79,59 @@ Ce dernier collecte et analyse toutes les données sur la criminalité de la vil
 
 
     </body>
+
+    <script>
+        var modal1 = document.getElementById("modal1");
+        var img1 = document.getElementById("image1");
+        var modalImg1 = document.getElementById("modalImg1");
+
+        img1.onclick = function(){
+            modal1.style.display = "flex";
+            modalImg1.src = "https://media.discordapp.net/attachments/601194253762166794/973729678521172008/unknown.png";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        modal1.onclick = function() {
+            modal1.style.display = "none";
+        }
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+        var modal2 = document.getElementById("modal2");
+        var img2 = document.getElementById("image2");
+        var modalImg2 = document.getElementById("modalImg2");
+
+        img2.onclick = function(){
+            modal2.style.display = "flex";
+            modalImg2.src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.actionco.fr%2FImg%2FBREVE%2F2015%2F4%2F253638%2FBig-data-entreprises-pas-encore-rendez-vous--F.jpg&f=1&nofb=1";
+        }
+
+
+        // When the user clicks on <span> (x), close the modal
+        modal2.onclick = function() {
+            modal2.style.display = "none";
+        }
+
+
+
+        var modal3 = document.getElementById("modal3");
+        var img3 = document.getElementById("image3");
+        var modalImg3 = document.getElementById("modalImg3");
+
+        img3.onclick = function(){
+            modal3.style.display = "flex";
+            modalImg3.src = "https://cdn.pixabay.com/photo/2020/01/27/10/24/pollution-4796858_960_720.jpg";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        modal3.onclick = function() {
+            modal3.style.display = "none";
+        }
+
+
+    </script>
 
 
 </html>

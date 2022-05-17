@@ -42,10 +42,65 @@ body{
     justify-content: center;
 }
 
-.image-icon{
+.image-container{
+    position: absolute;
+    right: 200px;
+    align-self: center;
     margin-left: 45px;
     height: 60px;
     width: 60px;
+    cursor: pointer;
+}
+
+.illustration{
+    position: absolute;
+    opacity: 0;
+}
+
+.image-icon:hover .illustration{
+    opacity: 100%;
+}
+
+
+
+
+
+.modal {
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 900px;
+
+
+}
+
+
+
+
+
+
+
+
+.image-icon{
+    width: 100%;
+    height: 100%;
 }
 
 .source-container{
